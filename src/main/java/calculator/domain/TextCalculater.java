@@ -21,10 +21,10 @@ public class TextCalculater {
     private int parseNumber(String text){
         try{
             int num = Integer.parseInt(text);
-            if (num < 0 ) throw new IllegalArgumentException(InputException.OPERAND_POSITIVE_PRICIPLE.getMessage());
+            if (num < 0 ) throw new IllegalArgumentException(InputException.OPERAND_POSITIVE_PRINCIPLE.getMessage());
             return num;
         } catch (NumberFormatException e){
-            throw new IllegalArgumentException(InputException.OPERAND_NUMBER_PRICIPLE.getMessage() + "(" + text + ")");
+            throw new IllegalArgumentException(InputException.OPERAND_NUMBER_PRINCIPLE.getMessage() + "(" + text + ")");
         }
     }
 
